@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinecraftLANConnection", "MinecraftLANConnection\MinecraftLANConnection.csproj", "{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftLANConnection.Models", "MinecraftLANConnection.Models\MinecraftLANConnection.Models.csproj", "{D68A3183-A3D7-48DB-A8E1-F0537A231319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftLANConnection.ViewModels", "MinecraftLANConnection.ViewModels\MinecraftLANConnection.ViewModels.csproj", "{1C68F8D6-E54D-495B-A54A-067064523C70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftLANConnection.Core", "MinecraftLANConnection.Core\MinecraftLANConnection.Core.csproj", "{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +23,18 @@ Global
 		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C68F8D6-E54D-495B-A54A-067064523C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C68F8D6-E54D-495B-A54A-067064523C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C68F8D6-E54D-495B-A54A-067064523C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C68F8D6-E54D-495B-A54A-067064523C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
