@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinecraftLANConnection", "MinecraftLANConnection\MinecraftLANConnection.csproj", "{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpConnectionSystem.Models", "TcpConnectionSystem.Models\TcpConnectionSystem.Models.csproj", "{5619F796-497B-4F48-921D-96A7A1BE8CDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftLANConnection.Models", "MinecraftLANConnection.Models\MinecraftLANConnection.Models.csproj", "{D68A3183-A3D7-48DB-A8E1-F0537A231319}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpConnectionSystem", "TcpConnectionSystem\TcpConnectionSystem.csproj", "{C488358E-150D-4656-9812-DF1BEF1FD31B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftLANConnection.ViewModels", "MinecraftLANConnection.ViewModels\MinecraftLANConnection.ViewModels.csproj", "{1C68F8D6-E54D-495B-A54A-067064523C70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpConnectionSystem.Core", "TcpConnectionSystem.Core\TcpConnectionSystem.Core.csproj", "{36E73CE3-2118-4F17-AB46-EF84F4383411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftLANConnection.Core", "MinecraftLANConnection.Core\MinecraftLANConnection.Core.csproj", "{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpConnectionSystem.ViewModels", "TcpConnectionSystem.ViewModels\TcpConnectionSystem.ViewModels.csproj", "{19CD42E3-BE14-4820-A3E8-ED9A904E1E52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,24 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4CEEB09-E4EE-4DE8-BE1A-274F9D84CC18}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D68A3183-A3D7-48DB-A8E1-F0537A231319}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C68F8D6-E54D-495B-A54A-067064523C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C68F8D6-E54D-495B-A54A-067064523C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C68F8D6-E54D-495B-A54A-067064523C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C68F8D6-E54D-495B-A54A-067064523C70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35AAA6FE-3F54-486B-ABEF-9B35F687E32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5619F796-497B-4F48-921D-96A7A1BE8CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5619F796-497B-4F48-921D-96A7A1BE8CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5619F796-497B-4F48-921D-96A7A1BE8CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5619F796-497B-4F48-921D-96A7A1BE8CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C488358E-150D-4656-9812-DF1BEF1FD31B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C488358E-150D-4656-9812-DF1BEF1FD31B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C488358E-150D-4656-9812-DF1BEF1FD31B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C488358E-150D-4656-9812-DF1BEF1FD31B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E73CE3-2118-4F17-AB46-EF84F4383411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E73CE3-2118-4F17-AB46-EF84F4383411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E73CE3-2118-4F17-AB46-EF84F4383411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E73CE3-2118-4F17-AB46-EF84F4383411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CD42E3-BE14-4820-A3E8-ED9A904E1E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CD42E3-BE14-4820-A3E8-ED9A904E1E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CD42E3-BE14-4820-A3E8-ED9A904E1E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CD42E3-BE14-4820-A3E8-ED9A904E1E52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TcpConnectionSystem.MainPage">
+
+    <ScrollView> 
+
+        <StackLayout Orientation="Vertical">
+
+            <StackLayout Margin="20"
+                         Orientation="Horizontal">
+
+                <StackLayout Orientation="Vertical"
+                             Margin="10">
+
+                    <Button Text="Create"
+                            Margin="0,0,0,10"
+                            VerticalOptions="Start"
+                            Command="{Binding CreateServerCommand}"/>
+
+                    <Button Text="Connect"
+                            VerticalOptions="Start"
+                            Command="{Binding ConnectCommand}"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"
+                             Margin="10,45,10,10">
+
+                    <Label Text="{Binding User.Name}"/>
+    
+                    <Label Text="{Binding User.IPAddress}"/>
+
+                 </StackLayout>
+
+            </StackLayout>
+
+            <Label Text="Connected servers"
+                   IsVisible="{Binding IsServersVisible}"/>
+
+            <ListView ItemsSource="{Binding ConnectedServers}"
+                      SelectionMode="None"
+                      Margin="10"
+                      IsVisible="{Binding IsServersVisible}">
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="10,0,0,0">
+
+                                <Ellipse Fill="Green"
+                                         WidthRequest="15"
+                                         HeightRequest="15"/>
+
+                                <StackLayout Orientation="Vertical"
+                                             Margin="10,0,0,0">
+
+                                    <Label Text="{Binding Key}"/>
+
+                                    <Label Text="{Binding Value}"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+            <Label Text="Connected users"
+                   IsVisible="{Binding IsUsersVisible}"/>
+
+            <ListView ItemsSource="{Binding ConnectedUsers}"
+                      SelectionMode="None"
+                      Margin="10"
+                      IsVisible="{Binding IsUsersVisible}">
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="10,0,0,0">
+
+                                <Ellipse Fill="Green"
+                                         WidthRequest="15"
+                                         HeightRequest="15"/>
+
+                                <StackLayout Orientation="Vertical"
+                                             Margin="10,0,0,0">
+
+                                    <Label Text="{Binding Name}"/>
+
+                                    <Label Text="{Binding IPAddress}"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>
+
