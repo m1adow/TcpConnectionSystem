@@ -24,7 +24,4 @@
 	<ItemGroup>
 	  <None Remove="MvvmLight" />
 	</ItemGroup>
-	<ItemGroup>
-	  <PackageReference Include="MvvmLight" Version="5.4.1.1" />
-	</ItemGroup>
 </Project>
